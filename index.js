@@ -57,14 +57,14 @@ docs.forEach((doc) => {
   let temp_html = `
   <li>
     <span>${text}</span>
-    <button value="${id}" id="edit-btn">수정</button>
-    <button value="${id}" id="del-btn">삭제</button>
+    <button value="${id}" class="edit-btn">수정</button>
+    <button value="${id}" class="del-btn">삭제</button>
   </li>`;
   $('#Todo').append(temp_html);
 });
 
 // 삭제 함수
-$('#del-btn').click(async function () {
+$('.del-btn').click(async function () {
   if (confirm('정말 삭제하시겠습니까?') == true) {
     await deleteDoc(doc(db, 'todolist', this.value));
     window.location.reload();
@@ -74,7 +74,7 @@ $('#del-btn').click(async function () {
 });
 
 // 수정 함수
-$('#edit-btn').click(async function () {
+$('.edit-btn').click(async function () {
   let target = this.parentElement.children[0];
   let temp = target.textContent; // 기존 내용 저장
 
