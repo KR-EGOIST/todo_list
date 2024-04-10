@@ -62,7 +62,11 @@ li {
   margin-bottom: 7px;
 }
 
-li button {
+li div {
   float: right;
+}
+
+li button {
+  float: left;
   margin-left: 30px;
 }
