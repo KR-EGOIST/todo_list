@@ -6,6 +6,7 @@
 해결한 방법
 1. 추가 함수에서 id 값을 button 태그에 value 값으로 저장 후 value 값을 this로 읽어오는 방식으로 해결함.
 2. id 를 class 로 변경함.
+3. 부모를 float:rigth 로 선언하고 자식을 float:left 로 선언해 순서가 정상적으로 나오게 해결함.
 
 아쉬운점
 1. 수정 함수에서 prompt 말고 span 부분을 잠시 input 태그 형식처럼 변경시켜서 값을 수정하고 싶었다.
