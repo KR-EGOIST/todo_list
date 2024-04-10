@@ -28,7 +28,6 @@ const db = getFirestore(app);
 
 const form = document.querySelector('form');
 const input = document.querySelector('input');
-const ul = document.querySelector('ul');
 
 // 추가 함수
 $('#add-btn').click(async function () {
