@@ -56,8 +56,10 @@ docs.forEach((doc) => {
   let temp_html = `
   <li>
     <span>${text}</span>
-    <button value="${id}" class="edit-btn">수정</button>
-    <button value="${id}" class="del-btn">삭제</button>
+    <div>
+      <button value="${id}" class="edit-btn">수정</button>
+      <button value="${id}" class="del-btn">삭제</button>
+    </div>
   </li>`;
   $('#Todo').append(temp_html);
 });
